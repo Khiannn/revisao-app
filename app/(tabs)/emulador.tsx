@@ -16,12 +16,25 @@ export default function TabTwoScreen() {
             source={require('@/assets/images/partial-react-logo.png')}
             style={styles.reactLogo}
         />
-        
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Sobre</ThemedText>
+        <ThemedText type="title">Emulador</ThemedText>
       </ThemedView>
-      <ThemedText>Feito por Lucas Silva Pacheco 3ºINFO</ThemedText>
+      <ThemedText>Aqui você aprende tópicos de como criar um emulador</ThemedText>
+      <Collapsible title="O primeiro passo para criar um emulador é:">
+        <ThemedText style={styles.paragrafo}>
+        Primeiro voce precisa ter instalado no computador o programa 'Android Studio' criar o emulador.
+        </ThemedText>
+        <ThemedText style={styles.paragrafo}>
+        Ao entrar no Android Studio voce aperta em "more actions" e  depois em "Virtual Device Manager".
+        </ThemedText>
+        <ThemedText style={styles.paragrafo}>
+        Depois voce clica no simbolo "+" no canto superior da tela.
+        </ThemedText>
+        <ThemedText style={styles.paragrafo}>
+        Voce escolhe um tipo de "phone" e aperta em next duas vezes e esta pronto.
+        </ThemedText>
+      </Collapsible>
     </ParallaxScrollView>
   );
 }

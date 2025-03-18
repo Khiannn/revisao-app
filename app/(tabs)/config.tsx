@@ -19,9 +19,23 @@ export default function TabTwoScreen() {
         
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Sobre</ThemedText>
+        <ThemedText type="title">Config</ThemedText>
       </ThemedView>
-      <ThemedText>Feito por Lucas Silva Pacheco 3ºINFO</ThemedText>
+      <ThemedText>Aqui é explicado como criar um projeto e rodar no emulador do android.</ThemedText>
+      <Collapsible title="O primeiro passo para criar um projeto é:">
+        <ThemedText style={styles.paragrafo}>
+           No terminal vc precisa escrever "npx create-expo-app 'nome do projeto'" para criar um novo projeto.
+        </ThemedText>
+        <ThemedText style={styles.paragrafo}>
+           Apos isso vc precisa colocar "npm install 'nome das dependencias' --save" para instalar as dependencias dos arquivos no projeto.
+        </ThemedText>
+        <ThemedText style={styles.paragrafo}>
+           Depois so colocar o "code ." para mexer no arquivo.
+        </ThemedText>
+        <ThemedText style={styles.paragrafo}>
+           Ai no visual studio code vc coloca "npm run android.
+        </ThemedText>
+      </Collapsible>
     </ParallaxScrollView>
   );
 }
